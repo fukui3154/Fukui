@@ -9,3 +9,5 @@ Rails.application.routes.draw do
   get '/users/destroy', to:'users#destroy'
 
 end
+
+
