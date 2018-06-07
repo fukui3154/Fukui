@@ -9,19 +9,19 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 </head>
 
-<body>
+  <body>
 
-<p>ナビゲーションバー：</p>
-<%= link_to 'index', '/users' %>
-<%= link_to 'new', '/users/new' %>
-<%= link_to 'create', '/users/create' %>
-<%= link_to 'show', '/users/show' %>
-<%= link_to 'edit', '/users/edit' %>
-<%= link_to 'destroy', '/users/destroy' %>
-<%= link_to 'update', '/users/update' %>
+    <p>ナビゲーションバー：</p>
+    <%= link_to 'index', '/users' %>
+    <%= link_to 'new', '/users/new' %>
+    <%= link_to 'create', '/users/create' %>
+    <%= link_to 'show', '/users/show' %>
+    <%= link_to 'edit', '/users/edit' %>
+    <%= link_to 'destroy', '/users/destroy' %>
+    <%= link_to 'update', '/users/update' %>
 
-<div class="contents">
-  <%= yield %>
-</div>
-</body>
+    <div class="contents">
+      <%= yield %>
+    </div>
+  </body>
 </html>
