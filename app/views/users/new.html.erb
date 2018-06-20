@@ -1,2 +1,15 @@
-<% @hello = "helo world" %>
-<%= @hello %>	
+<%= form_tag(users_path, method: :post) do %>
+  <div>
+    <%= label_tag :名前 %>
+    <%= text_field_tag :name %>
+  </div>
+  <div>
+  <%= label_tag :年齢 %>
+  <%= text_field_tag :age %>
+  </div>
+  <div>
+    <%= label_tag :住所 %>
+    <%= text_field_tag :address %>
+  </div>
+  <%= submit_tag "登録" %>
+<% end %>
