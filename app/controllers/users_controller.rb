@@ -9,6 +9,9 @@ class UsersController < ApplicationController
 		@name = params[:name]
 		@age = params[:age]
 		@address = params[:address]
+		@hobby = params[:hobby]
+		@birth = params[:birth]
+		@mail = params[:mail]
 	end
 
 	def show
