@@ -6,9 +6,7 @@ class UsersController < ApplicationController
 	end
 
 	def create
-		@name = params[:name]
-		@age = params[:age]
-		@address = params[:address]
+		User.create(name: params[:name], age: params[:age], address: params[:address], hobby: params[:hobby], birth: params[:birth])
 	end
 
 	def show
