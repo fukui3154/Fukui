@@ -12,6 +12,7 @@ class UsersController < ApplicationController
 		@hobby = params[:hobby]
 		@birth = params[:birth]
 		@mail = params[:mail]
+		@tell = params[:tell]
 	end
 
 	def show
