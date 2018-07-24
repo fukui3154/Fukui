@@ -1,2 +1,9 @@
-<% @hello = "helo world" %>
-<%= @hello %>
+<% @users.each do |user| %>
+
+<%= user.name %>
+<%= user.age %>
+<%= user.address %>
+<%= user.hobby %>
+<%= user.birth %>
+
+<% end %>

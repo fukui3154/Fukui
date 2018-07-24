@@ -7,7 +7,11 @@ class CreateUsers < ActiveRecord::Migration[5.2]
       t.string :address
       t.string :hobby
       t.string :birth
+      t.integer :tell
+      t.integer :wheigh
+      
       t.timestamps
+
     end
   end
 end

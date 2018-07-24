@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(version: 2018_07_08_115233) do
     t.string "address"
     t.string "hobby"
     t.string "birth"
+    t.string "tall"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

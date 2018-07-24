@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
 	def index
+		@users = User.all
 	end
 
 	def new
@@ -7,9 +8,12 @@ class UsersController < ApplicationController
 
 	def create
 		User.create(name: params[:name], age: params[:age], address: params[:address], hobby: params[:hobby], birth: params[:birth])
+        
 	end
 
 	def show
+        @tell = params[:tell]
+        @wheigh = params[:wheigh]
 	end
 
 	def edit
