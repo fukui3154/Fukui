@@ -1,34 +1,36 @@
 <%= form_tag(users_path, method: :post) do %>
-          <%# ↑ターミナルで確認できる　users の　POSTメソッド　なのでuserコントローラーのcreateアクション が動く%>
-
- <%# postメソッドでは、users_controllerのcreateメソッドが動く
-     なので、createアクションのviewが動いてcreate.html.erbが表示される %>
-  <div>
-    <%= label_tag :名前 %>
-    <%= text_field_tag :name %>
-  </div>
-  <div>
-  <%= label_tag :年齢 %>
-  <%= text_field_tag :age %>
-  </div>
-  <div>
-    <%= label_tag :住所 %>
-    <%= text_field_tag :address %>
-  </div>
-  <div>
-    <%= label_tag :趣味 %>
-    <%= text_field_tag :hobby %>
-  </div>
-  <div>
-    <%= label_tag :生年月日 %>
-    <%= text_field_tag :birth %>
-  </div>
-
-
-  <%= submit_tag "登録" %>
+  <%# ↑ターミナルで確認できる　users の　POSTメソッド　なのでuserコントローラーのcreateアクション が動く%>
+  <%# postメソッドでは、users_controllerのcreateメソッドが動く
+  なので、createアクションのviewが動いてcreate.html.erbが表示される %>
+  <table>
+    <tr>
+     <th><%= label_tag :名前 %></th>
+     <th><%= text_field_tag :name %></th>
+    </tr>
+    <tr>
+     <th><%= label_tag :年齢 %></th>
+     <th><%= text_field_tag :age %></th>
+    </tr>
+    <tr>
+     <th><%= label_tag :住所 %></th>
+     <th><%= text_field_tag :address %></th>
+    </tr>
+    <tr>
+     <th><%= label_tag :趣味 %></th>
+     <th><%= text_field_tag :hobby %></th>
+    </tr>
+    <tr>
+     <th><%= label_tag :生年月日 %></th>
+     <th><%= text_field_tag :birth %></th>
+    </tr>
+    <tr>
+     <th></th>
+     <th><%= submit_tag "登録" %></th>
+    </tr>
+  </table>
 <% end %>
 
-<%= form_tag(user_path, method: :get) do %>
+<%= form_tag(user_index_path, method: :get) do %>
           <%# ↑ターミナルで確認できる　users の　POSTメソッド　なのでuserコントローラーのcreateアクション が動く%>
 
  <%# postメソッドでは、users_controllerのcreateメソッドが動く
@@ -41,7 +43,7 @@
   <%= label_tag :wheigh %>
   <%= text_field_tag :体重 %>
   </div>
-  
+
 
   <%= submit_tag "登録" %>
 <% end %>
